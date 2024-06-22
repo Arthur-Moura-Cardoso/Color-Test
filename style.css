@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .titulo-header {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .titulo-header span {
+    color: #871da7;
+}
+
+header .logo-header {
+    width: 5vw;
+}
+
+main {
+    grid-area: main;
+    height: 85vh;
+    width: 65vw;
+}
+
+.conteudo-usuario {
+    text-align: center;
+}
+
+main .titulo-padrao {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+aside {
+    font-family: 'Poppins', sans-serif;
+    grid-area: aside;
+    height: 85vh;
+    width: 30vw;
+    margin-left: auto;
+    border-left: 2px solid #000;
+}
+
+aside .aside-editar_conteudo_title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 16px;
+    padding: 8px;
+    border-bottom:2px solid #000;
+}
+
+.display-trecho {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.display-trecho_text {
+    font-size: 1.25em;
+    margin: 6px 0;
+}
+
+.display-trecho_conteudo,
+.display-trecho_codigo {
+    margin: auto;
+    width: 80%;
+    height: 5vh;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside .alinhar {
+    display: flex;
+    justify-items: center;
+    padding: 0 2vh;
+}
+
+aside .alinhar input[type = checkbox] {
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+footer {
+    grid-area: footer;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #000;
+    font-size: 0.9em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
